@@ -8,10 +8,10 @@ plan:
   - profile: one
     sets: next_profile
   - profile: "{{ next_profile }}"
-    sets: next_profile
+    sets: next_profil
   - profile: "{{ next_profile }}"
   - profile: three_and_a_half
-    sets: next_profile
+    sets: next_profi
   - profile: "{{ next_profile }}"
 profiles:
   one:
