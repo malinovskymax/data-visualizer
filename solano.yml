@@ -10,6 +10,7 @@ plan:
   - profile: "{{ next_profile }}"
     sets: next_profile
   - profile: "{{ next_profile }}"
+  - three_and_a_half
     sets: next_profile
   - profile: "{{ next_profile }}"
 profiles:
@@ -24,6 +25,9 @@ profiles:
     test_pattern:
       - spec/models/history_spec.rb
   three:
+    test_pattern:
+      - spec/models/history_spec.rb
+  three_and_a_half:
     environment:
       PROFILE: "three"
     test_pattern:
