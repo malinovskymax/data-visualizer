@@ -10,7 +10,7 @@ plan:
   - profile: "{{ next_profile }}"
     sets: next_profile
   - profile: "{{ next_profile }}"
-  - three_and_a_half
+  - profile: three_and_a_half
     sets: next_profile
   - profile: "{{ next_profile }}"
 profiles:
