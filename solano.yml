@@ -9,10 +9,10 @@ plan:
     sets: next_profile
   - profile: "{{ next_profile }}"
     sets: next_profil
-  - profile: "{{ next_profile }}"
+  - profile: "{{ next_profil }}"
   - profile: three_and_a_half
     sets: next_profi
-  - profile: "{{ next_profile }}"
+  - profile: "{{ next_profi }}"
 profiles:
   one:
     environment:
