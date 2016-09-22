@@ -5,9 +5,9 @@ File.open("solano-plan-variables.json", "w") do |f|
         f.write(JSON.dump({"next_profile" => "two"}))
     end
     if ENV["PROFILE"] == "two"
-        f.write(JSON.dump({"next_profile" => "three"}))
+        f.write(JSON.dump({"next_profil" => "three"}))
     end
     if ENV["PROFILE"] == "three"
-        f.write(JSON.dump({"next_profile" => "four"}))
+        f.write(JSON.dump({"next_profi" => "four"}))
     end
 end
