@@ -56,8 +56,8 @@ plan:
   - profile: one
   - profile: two
   - profile: 
-      three
-      three_and_a_half
+      - three
+      - three_and_a_half
   - profile: four
   - profile: five
 profiles:
