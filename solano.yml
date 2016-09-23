@@ -89,7 +89,7 @@ profiles:
 pipeline:
   a:
    - b: 
-    sets: next_profile
+    - sets: next_profile
       - e
    - c
    - d
