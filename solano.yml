@@ -88,13 +88,14 @@ profiles:
       # - spec/models/history_spec.rb
 pipeline:
   a:
-   - b: 
-    - sets: next_profile
-      - e
+   - b
+     sets: next_profile
+   - {{ next_profile }}
    - c
    - d
 edges:
-  - c: e
-  - d: e
+  - b: {{ next_profile }}
+  - c: {{ next_profile }}
+  - d: {{ next_profile }}
 # hooks:
   # post_build: "ruby compute-next-to-run.rb"
