@@ -52,14 +52,6 @@ postgresql:
   version: "9.2"
 firefox:
   version: '31.0esr'
-plan:
-  - profile: one
-  - profile: two
-  - profile: 
-      - three
-      - three_and_a_half
-  - profile: four
-  - profile: five
 profiles:
   one:
     environment:
@@ -72,11 +64,13 @@ profiles:
     test_pattern:
       - spec/models/history_spec.rb
   three:
+    environment:
+      PROFILE: "three"
     test_pattern:
       - spec/models/history_spec.rb
   three_and_a_half:
     environment:
-      PROFILE: "three"
+      PROFILE: "three_and_a_half"
     test_pattern:
       - spec/models/history_spec.rb
   four:
@@ -85,10 +79,20 @@ profiles:
     test_pattern:
       - spec/models/history_spec.rb
   five:
+    environment:
+      PROFILE: "five"
     test_pattern:
       - spec/models/history_spec.rb
   six:
     test_pattern:
       - spec/models/history_spec.rb
+pipeline:
+  one:
+   - two: four
+   - three
+   - three_and_a_half
+edges:
+  - three: four
+  - three_and_a_half: four
 hooks:
   post_build: "ruby compute-next-to-run.rb"
