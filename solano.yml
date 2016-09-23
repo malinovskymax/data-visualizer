@@ -91,8 +91,8 @@ pipeline:
    - profile: b
      sets: next_profile
    - profile: {{ next_profile }}
-   - c
-   - d
+   - profile: c
+   - profile: d
 edges:
   - b: {{ next_profile }}
   - c: {{ next_profile }}
