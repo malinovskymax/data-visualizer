@@ -88,7 +88,7 @@ profiles:
       # - spec/models/history_spec.rb
 pipeline:
   a:
-   - b
+   - profile: b
      sets: next_profile
    - {{ next_profile }}
    - c
