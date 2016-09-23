@@ -90,7 +90,7 @@ pipeline:
   a:
    - profile: b
      sets: next_profile
-   - {{ next_profile }}
+   - profile: {{ next_profile }}
    - c
    - d
 edges:
