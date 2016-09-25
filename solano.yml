@@ -1,101 +1,47 @@
-# ruby_version: "ruby-2.2.1-p85"
-# bundler_version: '1.11.2'
-# postgresql:
-#   version: "9.2"
-# firefox:
-#   version: '31.0esr'
-# plan:
-#   - profile: one
-#     sets: next_profile
-#   - profile: "{{ next_profile }}"
-#     sets: next_profil
-#   - profile: "{{ next_profil }}"
-#   - profile: three_and_a_half
-#     sets: next_profi
-#   - profile: "{{ next_profi }}"
-# profiles:
-#   one:
-#     environment:
-#       PROFILE: "one"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   two:
-#     environment:
-#       PROFILE: "two"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   three:
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   three_and_a_half:
-#     environment:
-#       PROFILE: "three"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   four:
-#     environment:
-#       PROFILE: "four"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   five:
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   six:
-#     test_pattern:
-#       - spec/models/history_spec.rb
-# hooks:
-#   post_build: "ruby compute-next-to-run.rb"
-
-ruby_version: "ruby-2.2.1-p85"
-bundler_version: '1.11.2'
-postgresql:
-  version: "9.2"
-firefox:
-  version: '31.0esr'
-profiles:
-  a:
-    # environment:
-      # PROFILE: "one"
-    test_pattern:
-      - spec/models/history_spec.rb
-  b:
-    # environment:
-      # PROFILE: "two"
-    test_pattern:
-      - spec/models/history_spec.rb
-  c:
-    # environment:
-      # PROFILE: "three"
-    test_pattern:
-      - spec/models/history_spec.rb
-  d:
-    # environment:
-      # PROFILE: "three_and_a_half"
-    test_pattern:
-      - spec/models/history_spec.rb
-  e:
-    # environment:
-      # PROFILE: "four"
-    test_pattern:
-      - spec/models/history_spec.rb
-  # five:
-    # environment:
-      # PROFILE: "five"
-    # test_pattern:
-      # - spec/models/history_spec.rb
-  # six:
-    # test_pattern:
-      # - spec/models/history_spec.rb
-pipeline:
-  a:
-   - profile: b
+ ruby_version: "ruby-2.2.1-p85"
+ bundler_version: '1.11.2'
+ postgresql:
+   version: "9.2"
+ firefox:
+   version: '31.0esr'
+ plan:
+   - profile: one
      sets: next_profile
-   - profile: {{ next_profile }}
-   - profile: c
-   - profile: d
-edges:
-  - b: {{ next_profile }}
-  - c: {{ next_profile }}
-  - d: {{ next_profile }}
-# hooks:
-  # post_build: "ruby compute-next-to-run.rb"
+   - profile: "{{ next_profile }}"
+     sets: next_profil
+   - profile: "{{ next_profil }}"
+   - profile: three_and_a_half
+     sets: next_profi
+   - profile: "{{ next_profi }}"
+ profiles:
+   one:
+     environment:
+       PROFILE: "one"
+     test_pattern:
+       - spec/models/history_spec.rb
+   two:
+     environment:
+       PROFILE: "two"
+     test_pattern:
+       - spec/models/history_spec.rb
+   three:
+     test_pattern:
+       - spec/models/history_spec.rb
+   three_and_a_half:
+     environment:
+       PROFILE: "three"
+     test_pattern:
+       - spec/models/history_spec.rb
+   four:
+     environment:
+       PROFILE: "four"
+     test_pattern:
+       - spec/models/history_spec.rb
+   five:
+     test_pattern:
+       - spec/models/history_spec.rb
+   six:
+     test_pattern:
+       - spec/models/history_spec.rb
+ hooks:
+   post_build: "ruby compute-next-to-run.rb"
