@@ -8,11 +8,11 @@
    - profile: one
      sets: next_profile
    - profile: "{{ next_profile }}"
-     sets: next_profil
-   - profile: "{{ next_profil }}"
+     sets: next_profile
+   - profile: "{{ next_profile }}"
    - profile: three_and_a_half
-     sets: next_profi
-   - profile: "{{ next_profi }}"
+     sets: next_profile
+   - profile: "{{ next_profile }}"
  profiles:
    one:
      environment:
