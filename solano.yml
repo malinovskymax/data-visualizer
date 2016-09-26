@@ -71,11 +71,11 @@ profiles:
       - spec/models/history_spec.rb
 pipeline:
   a:
-   - profile: b
-     sets: next_profile
-   - profile: {{ next_profile }}
-   - profile: c
-   - profile: d
+    profile: b
+    sets: next_profile
+    profile: {{ next_profile }}
+    profile: c
+    profile: d
 #edges:
 #  - b: {{ next_profile }}
 #  - c: {{ next_profile }}
