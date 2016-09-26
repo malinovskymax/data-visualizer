@@ -76,7 +76,7 @@ pipeline:
    - profile: {{ next_profile }}
    - profile: c
    - profile: d
-edges:
-  - b: {{ next_profile }}
-  - c: {{ next_profile }}
-  - d: {{ next_profile }}
+#edges:
+#  - b: {{ next_profile }}
+#  - c: {{ next_profile }}
+#  - d: {{ next_profile }}
