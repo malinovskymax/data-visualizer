@@ -45,54 +45,38 @@
 #       - spec/models/history_spec.rb
 # hooks:
 #   post_build: "ruby compute-next-to-run.rb"
- 
-ruby_version: "ruby-2.2.1-p85"
-bundler_version: '1.11.2'
-postgresql:
-  version: "9.2"
-firefox:
-  version: '31.0esr'
-profiles:
-  a:
-    # environment:
-      # PROFILE: "one"
-    test_pattern:
-      - spec/models/history_spec.rb
-  b:
-    # environment:
-      # PROFILE: "two"
-    test_pattern:
-      - spec/models/history_spec.rb
-  c:
-    # environment:
-      # PROFILE: "three"
-    test_pattern:
-      - spec/models/history_spec.rb
-  d:
-    # environment:
-      # PROFILE: "three_and_a_half"
-    test_pattern:
-      - spec/models/history_spec.rb
-  e:
-    # environment:
-      # PROFILE: "four"
-    test_pattern:
-      - spec/models/history_spec.rb
-  # five:
-    # environment:
-      # PROFILE: "five"
-    # test_pattern:
-      # - spec/models/history_spec.rb
-  # six:
-    # test_pattern:
-      # - spec/models/history_spec.rb
-pipeline:
-  a:
-   - b: e
-   - c
-   - d
-edges:
-  - c: e
-  - d: e
-# hooks:
-  # post_build: "ruby compute-next-to-run.rb"
+
+
+
+
+
+#ruby_version: "ruby-2.2.1-p85"
+#bundler_version: '1.11.2'
+#postgresql:
+#  version: "9.2"
+#firefox:
+#  version: '31.0esr'
+#profiles:
+#  a:
+#    test_pattern:
+#      - spec/models/history_spec.rb
+#  b:
+#    test_pattern:
+#      - spec/models/history_spec.rb
+#  c:
+#    test_pattern:
+#      - spec/models/history_spec.rb
+#  d:
+#    test_pattern:
+#      - spec/models/history_spec.rb
+#  e:
+#    test_pattern:
+#      - spec/models/history_spec.rb
+#pipeline:
+#  a:
+#   - b: e
+#   - c
+#   - d
+#edges:
+#  - c: e
+#  - d: e
