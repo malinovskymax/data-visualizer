@@ -50,33 +50,33 @@
 
 
 
-#ruby_version: "ruby-2.2.1-p85"
-#bundler_version: '1.11.2'
-#postgresql:
-#  version: "9.2"
-#firefox:
-#  version: '31.0esr'
-#profiles:
-#  a:
-#    test_pattern:
-#      - spec/models/history_spec.rb
-#  b:
-#    test_pattern:
-#      - spec/models/history_spec.rb
-#  c:
-#    test_pattern:
-#      - spec/models/history_spec.rb
-#  d:
-#    test_pattern:
-#      - spec/models/history_spec.rb
-#  e:
-#    test_pattern:
-#      - spec/models/history_spec.rb
-#pipeline:
-#  a:
-#   - b: e
-#   - c
-#   - d
-#edges:
-#  - c: e
-#  - d: e
+ruby_version: "ruby-2.2.1-p85"
+bundler_version: '1.11.2'
+postgresql:
+  version: "9.2"
+firefox:
+  version: '31.0esr'
+profiles:
+  a:
+    test_pattern:
+      - spec/models/history_spec.rb
+  b:
+    test_pattern:
+      - spec/models/history_spec.rb
+  c:
+    test_pattern:
+      - spec/models/history_spec.rb
+  d:
+    test_pattern:
+      - spec/models/history_spec.rb
+  e:
+    test_pattern:
+      - spec/models/history_spec.rb
+pipeline:
+  a:
+   - b: e
+   - c
+   - d
+edges:
+  - c: e
+  - d: e
