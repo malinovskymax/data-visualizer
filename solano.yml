@@ -54,8 +54,12 @@
 #  version: '31.0esr'
 profiles:
   a:
+#    test_pattern:
+#      - spec/models/history_spec.rb
     test_pattern:
-      - spec/models/history_spec.rb
+      - spek/*
+    tests:
+      - "exit 0"
   b:
     test_pattern:
       - spek/*
