@@ -95,4 +95,4 @@ edges:
   - d: e
   - e: f
   - f: g
-   -f: h
+  - f: h
