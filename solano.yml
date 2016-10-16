@@ -97,13 +97,13 @@ profiles:
       - "exit 0"
 pipeline:
 #  a:
-  b: 
-   - e:
-      - f:
-         - g
-         - h
-  c
-  d
+  - b: 
+     - e:
+        - f:
+           - g
+           - h
+  - c
+  - d
 edges:
   - c: e
   - d: e
