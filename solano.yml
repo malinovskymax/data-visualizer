@@ -1,112 +1,44 @@
-# ruby_version: "ruby-2.2.1-p85"
-# bundler_version: '1.11.2'
+ ruby_version: "ruby-2.2.1-p85"
+ bundler_version: '1.11.2'
 # postgresql:
 #   version: "9.2"
 # firefox:
 #   version: '31.0esr'
-# plan:
-#   - profile: one
-#     sets: next_profile
-#   - profile: "{{ next_profile }}"
-#     sets: next_profil
-#   - profile: "{{ next_profil }}"
-#   - profile: three_and_a_half
-#     sets: next_profi
-#   - profile: "{{ next_profi }}"
-# profiles:
-#   one:
-#     environment:
-#       PROFILE: "one"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   two:
-#     environment:
-#       PROFILE: "two"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   three:
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   three_and_a_half:
-#     environment:
-#       PROFILE: "three"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   four:
-#     environment:
-#       PROFILE: "four"
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   five:
-#     test_pattern:
-#       - spec/models/history_spec.rb
-#   six:
-#     test_pattern:
-#       - spec/models/history_spec.rb
-# hooks:
-#   post_build: "ruby compute-next-to-run.rb"
-
-ruby_version: "ruby-2.2.1-p85"
-bundler_version: '1.11.2'
-#postgresql:
-#  version: "9.2"
-#firefox:
-#  version: '31.0esr'
-profiles:
-  a:
-#    test_pattern:
-#      - spec/models/history_spec.rb
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  b:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  c:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  d:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  e:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  f:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  g:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  h:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-pipeline:
-#  a:
-  - b: 
-     - e:
-        - f:
-           - g
-           - h
-  - c
-  - d
-edges:
-  - c: e
-  - d: e
-  - e: f
-  - f: g
-  - f: h
+ plan:
+   - profile: one
+     sets: next_profile
+   - profile: "{{ next_profile }}"
+     sets: next_profile
+   - profile: "{{ next_profile }}"
+   - profile: four
+     sets: next_profile
+   - profile: "{{ next_profile }}"
+ profiles:
+   one:
+     environment:
+       PROFILE: "one"
+     test_pattern:
+       - spec/models/history_spec.rb
+   two:
+     environment:
+       PROFILE: "two"
+     test_pattern:
+       - spec/models/history_spec.rb
+   three:
+     test_pattern:
+       - spec/models/history_spec.rb
+   three_and_a_half:
+     environment:
+       PROFILE: "three"
+     test_pattern:
+       - spec/models/history_spec.rb
+   four:
+     environment:
+       PROFILE: "four"
+     test_pattern:
+       - spec/models/history_spec.rb
+   five:
+     test_pattern:
+       - spec/models/history_spec.rb
+ hooks:
+   post_build: "ruby compute-next-to-run.rb"
