@@ -72,11 +72,16 @@ profiles:
   e:
     test_pattern:
       - spec/models/history_spec.rb
+  e:
+    test_pattern:
+      - spec/models/history_spec.rb
 pipeline:
   a:
-   - b: e
+   - b: 
+      - e: f
    - c
    - d
 edges:
   - c: e
   - d: e
+  - e: f
