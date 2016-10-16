@@ -46,12 +46,12 @@
 # hooks:
 #   post_build: "ruby compute-next-to-run.rb"
 
-ruby_version: "ruby-2.2.1-p85"
-bundler_version: '1.11.2'
-postgresql:
-  version: "9.2"
-firefox:
-  version: '31.0esr'
+#ruby_version: "ruby-2.2.1-p85"
+#bundler_version: '1.11.2'
+#postgresql:
+#  version: "9.2"
+#firefox:
+#  version: '31.0esr'
 profiles:
   a:
     test_pattern:
