@@ -98,10 +98,10 @@ profiles:
 pipeline:
 #  a:
   b: 
-      - e:
-         - f:
-            - g
-            - h
+   - e:
+      - f:
+         - g
+         - h
   c
   d
 edges:
