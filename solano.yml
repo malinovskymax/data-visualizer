@@ -75,13 +75,24 @@ profiles:
   f:
     test_pattern:
       - spec/models/history_spec.rb
+  g:
+    test_pattern:
+      - spec/models/history_spec.rb
+  h:
+    test_pattern:
+      - spec/models/history_spec.rb
 pipeline:
   a:
    - b: 
-      - e: f
+      - e:
+         - f:
+            - g
+            - h
    - c
    - d
 edges:
   - c: e
   - d: e
   - e: f
+  - f: g
+   -f: h
