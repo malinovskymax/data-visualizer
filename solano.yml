@@ -46,10 +46,6 @@
 # hooks:
 #   post_build: "ruby compute-next-to-run.rb"
 
-
-
-
-
 ruby_version: "ruby-2.2.1-p85"
 bundler_version: '1.11.2'
 postgresql:
@@ -61,26 +57,26 @@ profiles:
     test_pattern:
       - spec/models/history_spec.rb
   b:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
   c:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
   d:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
   e:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
   f:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
   g:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
   h:
-    test_pattern:
-      - spec/models/history_spec.rb
+    tests:
+      - "exit 0"
 pipeline:
   a:
    - b: 
