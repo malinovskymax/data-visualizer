@@ -42,17 +42,13 @@ profiles:
     tests:
       - "exit 0"
 pipeline:
-  a:
-   - b: 
-      - e:
-         - f:
-            - g
-            - h
-   - c
-   - d
+  - a: 
+     - d
+  - b:
+     - e
+  - c:
+     - f
 edges:
-  - c: e
-  - d: e
-  - e: f
-  - f: g
-  - f: h
+  - a: d
+  - b: e
+  - c: f
