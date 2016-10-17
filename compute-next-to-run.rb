@@ -10,4 +10,7 @@ File.open("solano-plan-variables.json", "w") do |f|
      if ENV["PROFILE"] == "three"
          f.write(JSON.dump({"next_profile" => "four"}))
      end
+     if ENV["PROFILE"] == "four"
+         f.write(JSON.dump({"next_profile" => "five"}))
+     end
 end
