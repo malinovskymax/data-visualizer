@@ -25,9 +25,6 @@
      test_pattern:
        - spec/models/history_spec.rb
    three:
-     test_pattern:
-       - spec/models/history_spec.rb
-   three_and_a_half:
      environment:
        PROFILE: "three"
      test_pattern:
