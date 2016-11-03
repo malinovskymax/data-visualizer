@@ -6,36 +6,36 @@ profiles:
       - spek/*
     tests:
       - "exit 0"
-  b:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  c:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
+#  b:
+#    test_pattern:
+#      - spek/*
+#    tests:
+#      - "exit 0"
+#  c:
+#    test_pattern:
+#      - spek/*
+#    tests:
+#      - "exit 0"
   d:
     test_pattern:
       - spek/*
     tests:
       - "exit 0"
-  e:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  f:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
+#  e:
+#    test_pattern:
+#      - spek/*
+#    tests:
+#      - "exit 0"
+#  f:
+#    test_pattern:
+#      - spek/*
+#    tests:
+#      - "exit 0"
 pipeline:
   a: d
-  b: e
-  c: f
+#  b: e
+#  c: f
 edges:
   a: d
-  b: e
-  c: f
+#  b: e
+#  c: f
