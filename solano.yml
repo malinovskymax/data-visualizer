@@ -21,9 +21,8 @@ profiles:
       - spek/*
     tests:
       - "exit 0"
-pipeline:
-  a: b
-  c: d
-edges:
-  a: b
-  c: d
+plan:
+  - a
+  - b
+  - c
+  - d
