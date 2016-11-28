@@ -21,21 +21,9 @@ profiles:
       - spek/*
     tests:
       - "exit 0"
-  e:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  f:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
 pipeline:
-  a: d
-  b: e
-  c: f
+  a: b
+  c: d
 edges:
-  a: d
-  b: e
-  c: f
+  a: b
+  c: d
