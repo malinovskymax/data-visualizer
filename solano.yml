@@ -11,6 +11,8 @@ profiles:
       - spek/*
     tests:
       - "exit 1"
+    profile_config:
+      advance_on: 'always'
   c:
     test_pattern:
       - spek/*
