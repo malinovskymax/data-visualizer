@@ -10,7 +10,7 @@ profiles:
     test_pattern:
       - spek/*
     tests:
-      - "exit 0"
+      - "exit 1"
   c:
     test_pattern:
       - spek/*
