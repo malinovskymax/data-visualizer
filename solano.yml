@@ -1,24 +1,2 @@
 ruby_version: "ruby-2.2.1-p85"
 bundler_version: '1.11.2'
-profiles:
-  a:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-  b:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 1"
-    profile_config:
-      advance_on: 'always'
-  c:
-    test_pattern:
-      - spek/*
-    tests:
-      - "exit 0"
-plan:
-  - a
-  - b
-  - c
