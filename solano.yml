@@ -1,5 +1,5 @@
-ruby_version: "ruby-2.2.1-p85"
-bundler_version: '1.11.2'
+ruby_version: "ruby-2.2.1"
+#bundler_version: '1.11.2'
 
 test_pattern:
   - spec/controllers/api/v1/*_spec.rb
