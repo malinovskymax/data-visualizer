@@ -1,12 +1,19 @@
 ruby_version: "ruby-2.2.1"
 bundler_version: '1.11.2'
 
+#test_pattern:
+#  - spec/controllers/api/v1/*_spec.rb
+#  - spec/features/history*_spec.rb
+#  - spec/models/*_spec.rb
+#  - spec/routing/api/*_spec.rb
+#  - spec/routing/public/*_spec.rb
+  
 test_pattern:
-  - spec/controllers/api/v1/*_spec.rb
+  - spec/**/*_spec.rb
   - spec/features/history*_spec.rb
-  - spec/models/*_spec.rb
-  - spec/routing/api/*_spec.rb
-  - spec/routing/public/*_spec.rb
+#  - spec/models/*_spec.rb
+#  - spec/routing/api/*_spec.rb
+#  - spec/routing/public/*_spec.rb
 
 #rake:
 #  rails_env: test
