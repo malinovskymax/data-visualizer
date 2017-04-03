@@ -1,4 +1,4 @@
-#ruby_version: "ruby-2.2.1"
+ruby_version: "ruby-2.2.1"
 bundler_version: '1.11.2'
 
 test_pattern:
@@ -8,8 +8,8 @@ test_pattern:
   - spec/routing/api/*_spec.rb
   - spec/routing/public/*_spec.rb
 
-rake:
-  rails_env: test
+#rake:
+#  rails_env: test
 
 postgresql:
   version: '9.3'
