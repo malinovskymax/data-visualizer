@@ -14,4 +14,4 @@ test_pattern:
 postgresql:
   version: '9.3'
 
-firefox: '25.0'
+#firefox: '25.0'
