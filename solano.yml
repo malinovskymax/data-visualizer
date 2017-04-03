@@ -11,7 +11,7 @@ test_pattern:
 #rake:
 #  rails_env: test
 
-postgresql:
-  version: '9.3'
+#postgresql:
+#  version: '9.3'
 
 #firefox: '25.0'
