@@ -8,12 +8,8 @@ bundler_version: '1.11.2'
 #  - spec/routing/api/*_spec.rb
 #  - spec/routing/public/*_spec.rb
   
-test_pattern:
-  - spec/**/*_spec.rb
-  - spec/features/history*_spec.rb
-#  - spec/models/*_spec.rb
-#  - spec/routing/api/*_spec.rb
-#  - spec/routing/public/*_spec.rb
+#test_pattern:
+#  - spec/**/*_spec.rb
 
 #rake:
 #  rails_env: test
