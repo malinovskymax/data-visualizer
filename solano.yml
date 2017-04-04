@@ -1,5 +1,5 @@
 ruby_version: "2.2.1"
-bundler_version: '1.13.0'
+bundler_version: '1.13.7'
 
 #test_pattern:
 #  - spec/controllers/api/v1/*_spec.rb
