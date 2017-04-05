@@ -3,7 +3,7 @@ ruby_version: '2.3.1'
 bundler_version: '1.14.6'
 
 hooks:
-  package_setup: sudo apt-get -f install -y && sudo apt-get install -y libpcap-dev
+  package_setup: sudo apt-get -f install -y && sudo apt-get install -y libpcap-dev && bundle install
 
 #ok
 #ruby_version: "2.2.5"
