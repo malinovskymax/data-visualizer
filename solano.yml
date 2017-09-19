@@ -1,28 +1,28 @@
 #current max
-ruby_version: '2.3.1'
-bundler_version: '1.14.6'
+#ruby_version: '2.3.1'
+#bundler_version: '1.14.6'
 
-hooks:
-  package_setup: sudo apt-get -f install -y && sudo apt-get install -y libpcap-dev && bundle install
+#hooks:
+#  package_setup: sudo apt-get -f install -y && sudo apt-get install -y libpcap-dev && bundle install
 
 #ok
 #ruby_version: "2.2.5"
-#bundler_version: '1.14.6'
+bundler_version: '1.14.6'
 
-#test_pattern:
-#  - spec/controllers/api/v1/*_spec.rb
+test_pattern:
+  - spec/controllers/api/v1/*_spec.rb
 #  - spec/features/history*_spec.rb
-#  - spec/models/*_spec.rb
+  - spec/models/*_spec.rb
 #  - spec/routing/api/*_spec.rb
 #  - spec/routing/public/*_spec.rb
   
 #test_pattern:
 #  - spec/**/*_spec.rb
 
-#rake:
-#  rails_env: test
+rake:
+  rails_env: test
 
-#postgresql:
-#  version: '9.3'
+postgresql:
+  version: '9.3'
 
-#firefox: '25.0'
+firefox: '25.0'
